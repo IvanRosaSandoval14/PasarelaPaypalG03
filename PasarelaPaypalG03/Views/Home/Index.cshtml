@@ -1,41 +1,32 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<div class="d-flex gap-3 row">
-    <div class="card" style="width: 18rem;">
-        <img src="imagenes/imagen1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-            <a asp-controller="Payment" asp-action="CreateOrder" class="btn btn-primary">COMPRAR</a>
-        </div>
-    </div>
+<body style="background-color: moccasin; padding: 20px;">
 
-    <div class="card" style="width: 18rem;">
-        <img src="imagenes/imagen2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-            <a asp-controller="Payment" asp-action="CreateOrder" class="btn btn-primary">COMPRAR</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="imagenes/imagen3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-            <a asp-controller="Payment" asp-action="CreateOrder" class="btn btn-primary">COMPRAR</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="imagenes/imagen4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-            <a asp-controller="Payment" asp-action="CreateOrder" class="btn btn-primary">COMPRAR</a>
-        </div>
-    </div>
+    <h1 style="text-align: center;">❝𝐋𝐎𝐒 𝐌𝐄𝐉𝐎𝐑𝐄𝐒 𝐂𝐎𝐌𝐁𝐎𝐒 𝐃𝐄 𝐂𝐔𝐈𝐃𝐀𝐃𝐎 𝐅𝐀𝐂𝐈𝐀𝐋❞</h1>
 
 
-</div>
+    <div class="d-flex gap-3 row justify-content-center">
+        <div class="card col-md-3">
+            <img src="imagenes/imagen1.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" alt="Combo de Cuidado Facial">
+            <div class="card-body text-center">
+                <h5 class="card-title">✨ Combo de Cuidado Facial ✨</h5>
+                <p class="card-text">Dale a tu piel el amor que merece. Incluye todo lo que necesitas para una rutina completa: limpieza profunda, hidratación y protección duradera. ¡No dejes pasar la oportunidad de consentirte!</p>
+                <p class="card-text"><strong>Precio: $10</strong></p>
+                <a asp-controller="Payment" asp-action="CreateOrder" class="btn btn-dark w-100" style="background-color: salmon; color: black;">
+                    COMPRAR
+                </a>
+            </div>
+        </div>
+
+        <div class="card col-md-3">
+            <img src="imagenes/imagen4.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" alt="Combo Esencial para una Piel Radiante">
+            <div class="card-body text-center">
+                <h5 class="card-title">🌿 Combo para una Piel Radiante 🌿</h5>
+                <p class="card-text">Transforma tu rutina de cuidado facial y mejora tu piel facial con este increíble, a un precio facinante, el  set esta diseñado para limpiar, hidratar y revitalizar tu piel.¡Porque tu piel y tú se merecen lo mejor!</p>
+                <p class="card-text"><strong>Precio: $10</strong></p>
+                <a asp-controller="Payment" asp-action="CreateOrder" class="btn btn-dark w-100" style="background-color: salmon; color: black;">COMPRAR</a>
+            </div>
+        </div>
+    </div>
+</body>
