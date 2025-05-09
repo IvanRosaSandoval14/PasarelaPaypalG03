@@ -1,5 +1,9 @@
+using PasarelaPaypalG03.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
+// Registrar los servicios
+builder.Services.AddHttpClient<PayPalService>(); // Registra el servicio de PayPal
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -22,6 +26,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
+      pattern: "{controller=Home}/{action=Index}");
+/*pattern: "{controller=Payment}/{action=CreateOrder}/{id?}");*/ // Cambié la ruta predeterminada para que vaya a PaymentController
 app.Run();
